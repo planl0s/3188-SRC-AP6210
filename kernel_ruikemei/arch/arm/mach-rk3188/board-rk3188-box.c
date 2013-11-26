@@ -663,7 +663,7 @@ static struct rk_hdmi_platform_data rk_hdmi_pdata = {
 };
 #endif
 #ifdef CONFIG_ION
-#define ION_RESERVE_SIZE (80 * SZ_1M) //on 3188-SRC-AP6210 it's: (120 * SZ_1M)
+#define ION_RESERVE_SIZE (120 * SZ_1M) //on 3188-SRC-AP6210 it's:else (80 * SZ_1M)
 static struct ion_platform_data rk30_ion_pdata = {
         .nr = 1,
         .heaps = {
